@@ -410,6 +410,14 @@ a{
     width: 60%;
   }
 }
+
+@for $i from 1 through 4{
+  .gridMemoriaVivida__parrafo#{$i}{
+    color:rgb(43, 41, 41) * $i
+  }
+
+}
+
 /*otra cosa
 .row {
   display: flex;
@@ -538,4 +546,14 @@ input[type=submit] {
   background-color: rgb(0, 0, 0);
 }
 
-//about
+//danza disruptiva
+.contenedor_danza{
+  display: flex;
+  width: 100%;
+  justify-content: center; 
+  margin-bottom: 30px; 
+}
+
+.contenedor_about{
+  display: flex;
+}
