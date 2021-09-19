@@ -1,5 +1,5 @@
 $primary-color:rgb(248, 229, 236);
-$secondary-color:rgb(221, 189, 189);
+$secondary-color:rgb(231, 218, 218);
 $hover-color: rgb(184, 0, 98);
 $width: 10px;
 
@@ -17,7 +17,7 @@ body {
   }
 
 nav {
-  position: fixed;
+  background-color: $secondary-color;
   color: $hover-color;
   display: flex;
   justify-content: space-between;
@@ -113,7 +113,6 @@ nav .logo {
   white-space: nowrap;
 }
 .loopHolder__text {
-  font-family: "ObjectSans",sans-serif;
   font-weight: 700;
   color: transparent;
   text-shadow: none;
@@ -323,17 +322,48 @@ a{
 
 //index2
 .index{
-  display: inline-block;
-  font-size: 4rem;
-  margin-bottom: 30px;
+  display: grid;
+  grid-template-columns: 60% 40%;
+  font-size: 5vw;
+  margin-bottom: 10%;
   justify-content: center;
+  justify-items: center;
+  align-items: center;
+  padding-left: 30px;
+  font-style: italic;
+  a:hover{
+    color: $hover-color;
+  }
 }
-.index__element{
-  display: inline-block;
+
+.indexGrid{
+  display: grid;
+  grid-template-columns: 25% 50% 25%;
+  justify-items: center;
+  align-items: center;
+  margin-bottom: 10%;
+  font-size: 3vw;
 }
-.index__element2{
-  display: inline-block;
-  padding-top: 30%;
+.indexGrid__element1 {
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+}
+.indexGrid__element3 {
+  writing-mode: vertical-lr;
+}
+.indexGrid2{
+  display: grid;
+  grid-template-columns: 35% 30% 35%;
+  justify-items: center;
+  align-items: center;
+  font-size: 2.5vw;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-bottom: 50px;
+}
+
+a :hover{
+  color: $hover-color;
 }
 
  /*index*/
@@ -443,12 +473,12 @@ a{
   display: flex;
   width: 100%;
   justify-content: center; 
-  margin-bottom: 30px; 
+  margin-bottom: 30px;
+  margin-top: 30px; 
 }
 .contenedorDerroche_item{
-  width: 95%;
+  width: 100%;
   justify-content: center;
-  margin-left: 1.2vw;
 }
 
 .informacion{
@@ -465,6 +495,7 @@ a{
   flex-direction: column;
   justify-content: center;
   padding: 0 16px;
+  margin-bottom: 100px;
   img{
     width: 80%;
   }
@@ -474,7 +505,7 @@ a{
   display: flex;
   flex-direction: column;
   justify-content: center;
-
+  margin-bottom: 100px;
   margin-left: 16px;
   img{
     width: 60%;
