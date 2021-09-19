@@ -265,6 +265,19 @@ img {
   position: relative;
   left: 300px; }
 
+.index {
+  display: inline-block;
+  font-size: 4rem;
+  margin-bottom: 30px;
+  justify-content: center; }
+
+.index__element {
+  display: inline-block; }
+
+.index__element2 {
+  display: inline-block;
+  padding-top: 30%; }
+
 /*index*/
 .contenedorIndex {
   width: 100vw;

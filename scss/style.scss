@@ -322,10 +322,19 @@ a{
  }
 
 //index2
-
-
-
-
+.index{
+  display: inline-block;
+  font-size: 4rem;
+  margin-bottom: 30px;
+  justify-content: center;
+}
+.index__element{
+  display: inline-block;
+}
+.index__element2{
+  display: inline-block;
+  padding-top: 30%;
+}
 
  /*index*/
  .contenedorIndex{
@@ -566,13 +575,13 @@ input[type=submit] {
   }
 
 /*productos: taza, tote bag, cuaderno*/
- .parentGrid{
-   display: grid;
-   grid-template-columns: 50% 50%;
-   grid-column-gap: 5%;
-   padding-left: 15%;
-   margin-bottom: 50px;
- }
+.parentGrid{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-column-gap: 5%;
+  padding-left: 15%;
+  margin-bottom: 50px;
+}
 
 .parentGrid__btn--style {
   background-color: $secondary-color;
@@ -582,22 +591,22 @@ input[type=submit] {
   border-radius: 4px;
   cursor: pointer;
   &:hover{
-     background-color:$hover-color; 
-     color: white;  
+    background-color:$hover-color; 
+    color: white;  
   }
 }
 
- @media screen and (max-width: 800px) {
- .parentGrid{
-   display: block;
-   padding-left: 0%;
+@media screen and (max-width: 800px) {
+  .parentGrid{
+    display: block;
+    padding-left: 0%;
  }
 }
 
 @media screen and (max-width: 600px) {
- .parentGrid{
-   display: block;
-   padding-left: 0%;
+  .parentGrid{
+    display: block;
+    padding-left: 0%;
   }
 }
 
