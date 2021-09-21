@@ -127,6 +127,23 @@ nav .logo {
   .indexImg img {
     width: 50%; }
 
+.row {
+  margin-bottom: 50px; }
+
+.carousel {
+  width: 90%;
+  display: block;
+  margin-top: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px; }
+
+.indexGrid {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  justify-content: space-between;
+  margin-bottom: 30px; }
+
 .footer-basic {
   padding: 20px 0;
   background-color: #ffffff;
@@ -473,11 +490,6 @@ input[type=submit] {
     display: block;
     padding-left: 0%; } }
 
-.backgroundImage {
-  width: 100px;
-  height: 100px;
-  background-color: black; }
-
 .contenedor_danza {
   background-color: #f8e5ec;
   display: grid;
@@ -502,10 +514,13 @@ input[type=submit] {
   padding: 50px; }
 
 .contenedorDanza5 {
-  padding: 50px;
+  width: 100vw;
   display: flex;
-  text-align: center;
-  align-items: center;
-  width: 100vw; }
+  justify-content: center;
+  align-items: center; }
+  .contenedorDanza5 p {
+    font-size: 3vw;
+    letter-spacing: 10px; }
   .contenedorDanza5 img {
-    width: 50vw; }
+    width: 60vw;
+    padding: 30px; }
