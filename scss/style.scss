@@ -1,5 +1,5 @@
 $primary-color:rgb(248, 229, 236);
-$secondary-color:rgb(248, 229, 236);
+$secondary-color:rgb(231, 218, 218);
 $hover-color: rgb(184, 0, 98);
 $width: 10px;
 
@@ -15,9 +15,8 @@ body {
     font-size: 1.5rem;
     overflow-x: hidden;
   }
-
 nav {
-  background: $primary-color;
+  background-color: $secondary-color;
   color: $hover-color;
   display: flex;
   justify-content: space-between;
@@ -26,12 +25,10 @@ nav {
     margin-top: 10px;
   }
 }
-
 nav .mainMenu {
   display: flex;
   list-style: none;
 }
-
 nav .mainMenu li a {
   display: inline-block;
   padding: 15px;
@@ -40,31 +37,26 @@ nav .mainMenu li a {
   color: rgb(0, 0, 0);
   font-size: 1.2rem;
 }
-
 nav .mainMenu li a:hover {
   color: $hover-color;
 }
-
 nav .openMenu {
   font-size: 2rem;
   margin: $width * 2;
   display: none;
   cursor: pointer;
 }
-
 nav .mainMenu .closeMenu , .icons i {
   font-size: 2rem;
   display: none;
   cursor: pointer;
 }
-
 nav .logo {
   margin: 6px;
   font-size: 25px;
   font-weight: lighter;
 
 }
-
 @media(max-width: 800px){
   nav .logo{
     margin-top: 30px;
@@ -102,7 +94,6 @@ nav .logo {
     overflow-x: hidden;
   }
 }
-
 /*animacion portfolio*/
 .loopHolder {
   position: relative;
@@ -113,7 +104,6 @@ nav .logo {
   white-space: nowrap;
 }
 .loopHolder__text {
-  font-family: "ObjectSans",sans-serif;
   font-weight: 700;
   color: transparent;
   text-shadow: none;
@@ -135,42 +125,97 @@ nav .logo {
   from {
     transform: translateX(0%);
   }
-  
   to {
     transform: translateX(-100%);
   }
 }
-/*footer*/
-.flexContainer{
-  display: flex;
-  justify-content: space-between;
-  margin-left: 10px;
-  margin-right: 10px;
-  h5{
-    margin-top: 20px;
+.backgroundColour{
+  background-color: $secondary-color;
+}
+//index
+.indexh1{
+  font-size: 0.5vw;
+  font-style: italic;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.indexImg{
+  padding: 50px;
+  img{
+    width: 50%;
   }
 }
+.row{
+  margin-bottom: 50px;
+}
+.carousel{
+  width: 90%;
+  display: block;
+  margin-top: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+}
+.indexGrid{
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  justify-content: space-between;
+  margin-bottom: 30px;
 
-.flexContainer__element1{
-  display: flex;
-  justify-content: space-around;
 }
 
-.flexContainer__element2{
-  display: flex;
-  justify-content: space-around;
-  padding: 15px;
-  li{
-    display: inline-block;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 1.2rem;
-    }
-   a:hover{
-        color: $hover-color;
-   }    
+//footer2
+.footer-basic {
+  padding:20px 0;
+  background-color:#ffffff;
+  color:#000000;
+  ul {
+  padding:0;
+  list-style:none;
+  text-align:center;
+  font-size:18px;
+  line-height:1.6;
+  margin-bottom:0;
 }
-
+  li {
+  padding:0 10px;
+}
+  ul a {
+  color:inherit;
+  text-decoration:none;
+  opacity:0.8;
+}
+  ul a:hover {
+  color: $hover-color;
+}
+  .social {
+  text-align:center;
+  padding-bottom:25px;
+}
+  .social > a {
+  font-size:24px;
+  width:40px;
+  height:40px;
+  line-height:40px;
+  display:inline-block;
+  text-align:center;
+  border-radius:50%;
+  border:1px solid #ccc;
+  margin:0 8px;
+  color: $hover-color;
+  opacity:0.75;
+}
+  .social > a:hover {
+  opacity:0.9;
+}
+.copyright {
+  margin-top:15px;
+  text-align:center;
+  font-size:13px;
+  color:#aaa;
+  margin-bottom:0;
+}
+}
 @each $redSocial in instagram linkedin{
    .#{$redSocial}{
     margin-left: 10px;
@@ -180,141 +225,75 @@ nav .logo {
     background-position: center;
     background-size: contain;
     background-image: url("../IMG/#{$redSocial}.png") ;
-   }
+  }
 }
-
 @media screen and (max-width: 700px) {
-  .flexContainer{
-    display: block;
-    text-align: center;
-    float: none;
-    justify-content: center;
-  }
-  .flexContainer__element1{
-    display: flex;
-    justify-content: center;
-  }
   body{
     overflow-x: hidden;
   }
 }
-
-  .titulo1{
+.titulo1{
     padding-left: 30px;
     width: 50vw;
   }
-
 .titulo2{
   width: 100vw;
   flex-shrink: 0;
   white-space: nowrap;
   font-size: 230%;
 }
-
 a{
     text-decoration: none;
     color: black;  
-  }
-
- 
-  /*logo y numero*/
-  .contenedorFlex{
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 50px;
-    margin-top: 10px;
-    
-  }
-  .contenedorFlex__image {
-    position: relative;
-    left: 47%;
-    width: 7%;
- }
-
-
- h2{
-   font-size: 250%;
-
- }
- 
- @media screen and (max-width: 700px){
+}
+/*logo y numero*/
+.contenedorFlex{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+  margin-top: 10px;
+}
+.contenedorFlex__image {
+  position: relative;
+  left: 47%;
+  width: 7%;
+}
+h2{
+  font-size: 250%;
+}
+@media screen and (max-width: 700px){
   h1{
     font-size: 100%;
   } 
   h2{
     font-size: 100%;
-   }
-   p{
-   font-size: 50%;
-   }
-
-   .contenedorFlex{
-     display: block;
-     text-align: center;
-   }
- }
-
- img{
-   max-width: 100%;
- }
- .image4{
-   width: 50%;
-   position: relative;
-   left: 300px;
- }
-
- /*index*/
- .contenedorIndex{
-    background: $secondary-color;
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1rem;
-
- }
-.contenedorIndex__element{
-    width: 100vw;
-    padding: 30px;
+  }
+  p{
+  font-size: 50%;
+}
+  .contenedorFlex{
+    display: block;
     text-align: center;
-    h1{
-    font-size: 7vw;
-    }
-    a:hover{
-      color:$hover-color;
-    }
-}
-.contenedorIndexGrid{
-  background: $hover-color;
-  width: 100vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 1rem;
-}
-.contenedorIndexGrid__element{
-  width: 100vw;
-  padding: 30px;
-  text-align: center;
-  h1{
-  font-size: 7vw;
   }
-  a:hover{
-    color:white;
-  }
-
 }
-@media screen and (max-width: 1365px){
-    .contenedorIndex{
-      display: block;
-    }
-    .contenedorIndexGrid{
-      display: flex;
-      flex-direction: column-reverse;
-
-    }
+img{
+  max-width: 100%;
 }
- 
+.image4{
+  width: 50%;
+  position: relative;
+  left: 300px;
+}
+.indexGrid__element1 {
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+}
+.indexGrid__element3 {
+  writing-mode: vertical-lr;
+}
+a :hover{
+  color: $hover-color;
+}
 /*memoria vivida*/
 .memoriaVivida{
   background: $secondary-color;
@@ -325,38 +304,32 @@ a{
   font-size: 1rem;
   margin-bottom: 30px;
 }
-
 .memoriaVivida__element{
  width: 100vw;
  padding: 30px;
 }
-
 .gridMemoriaVivida{
   display: grid;
   grid-template-columns: 50% 50%;
   grid-row-gap: 30px;
 }
-
 .gridMemoriaVivida__text{
   font-size: 5vw;
   letter-spacing: 4.5vw;
   font-weight: bold;
   text-align: center;
 }
-
 @for $i from 1 through 4{
   .gridMemoriaVivida__parrafo#{$i}{
     color:rgb(43, 41, 41) * $i
   }
 
 }
-
 @media screen and (max-width: 1365px){
   .gridMemoriaVivida{
     display: block;
   }
 }
-
 /*producciones.html*/
 .imgGaleria{
   width: 100%;
@@ -365,51 +338,70 @@ a{
     border: 5px solid $secondary-color;
   }
 }
-
 //derroche ostentoso
-
 .contenedorDerroche{
   display: flex;
   width: 100%;
   justify-content: center; 
-  margin-bottom: 30px; 
+  margin-bottom: 30px;
+  margin-top: 30px; 
 }
 .contenedorDerroche_item{
-  width: 95%;
+  width: 100%;
   justify-content: center;
-  margin-left: 1.2vw;
 }
-
 .informacion{
   background-color: $secondary-color;
   width: 100%;
   padding: 3vw;
 }
-
-
 //marca
 .illustrazioni{
+  padding-top: 30px;
   align-items: flex-end;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-bottom: 88px;
-  padding: 0 16px;
+  padding: 30px 16px ;
+  margin-bottom: 100px;
+  letter-spacing: 10px;
   img{
     width: 80%;
   }
 }
-
+.fondoUnbreakable{
+  background-image: url('../IMG/fondolineas2.jpg');
+  background-repeat: repeat-y;
+  background-size: contain;
+}
+.fondoIllustrazioni{
+  background-image: url('../IMG/fondoblanco6.jpg');
+  background-repeat: repeat-y;
+  background-size: contain;
+}
 .illustrazioni2{
+  padding-top: 30px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-bottom: 88px;
+  margin-bottom: 100px;
   margin-left: 16px;
+  letter-spacing: 10px;
+  padding-bottom: 30px;
   img{
     width: 60%;
   }
 }
+.illustrazioni3{
+  padding: 30px;
+}
+@for $i from 1 through 4{
+  .gridMemoriaVivida__parrafo#{$i}{
+    color:rgb(43, 41, 41) * $i
+  }
+
+}
+
 /*otra cosa
 .row {
   display: flex;
@@ -457,8 +449,6 @@ a{
   margin-bottom: 50px;
   margin-top: 30px;
 }
-
-
 /*contacto*/
 input[type=text], select, textarea {
   width: 100%; 
@@ -485,7 +475,6 @@ input[type=submit] {
   border-radius: 5px;
   padding: 20px;
 }
-
 .containerFlex{
   flex-direction: row;
   flex-wrap: wrap;
@@ -497,14 +486,13 @@ input[type=submit] {
   }
 
 /*productos: taza, tote bag, cuaderno*/
- .parentGrid{
-   display: grid;
-   grid-template-columns: 50% 50%;
-   grid-column-gap: 5%;
-   padding-left: 15%;
-   margin-bottom: 50px;
- }
-
+.parentGrid{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-column-gap: 5%;
+  padding-left: 15%;
+  margin-bottom: 50px;
+}
 .parentGrid__btn--style {
   background-color: $secondary-color;
   padding: 12px 20px;
@@ -513,29 +501,58 @@ input[type=submit] {
   border-radius: 4px;
   cursor: pointer;
   &:hover{
-     background-color:$hover-color; 
-     color: white;  
+    background-color:$hover-color; 
+    color: white;  
   }
 }
-
- @media screen and (max-width: 800px) {
- .parentGrid{
-   display: block;
-   padding-left: 0%;
- }
+@media screen and (max-width: 800px) {
+  .parentGrid{
+    display: block;
+    padding-left: 0%;
 }
-
+}
 @media screen and (max-width: 600px) {
- .parentGrid{
-   display: block;
-   padding-left: 0%;
+  .parentGrid{
+    display: block;
+    padding-left: 0%;
   }
 }
-
-.backgroundImage{
-  width: 100px;
-  height: 100px;
-  background-color: rgb(0, 0, 0);
+//danza disruptiva
+.contenedor_danza{
+  background-color: $primary-color;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  justify-content: center; 
+  margin-bottom: 30px;
+  padding: 50px; 
+  background-image: url('../IMG/fondozanda.jpg');
 }
-
-//about
+.contenedorDanza2{
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.contenedorDanza3{
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.contenedorDanza4{
+  background-color: $secondary-color;
+  padding: 50px;
+}
+.contenedorDanza5{
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  p{
+    font-size: 3vw;
+    letter-spacing: 10px;
+  }
+  img{
+    width: 60vw;
+    padding: 30px;
+  }
+}
+//rumor
