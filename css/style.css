@@ -91,7 +91,6 @@ nav .logo {
 
 .loopHolder__text {
   font-weight: 700;
-  color: transparent;
   text-shadow: none;
   -webkit-text-stroke: 1px #323232;
   font-size: 20vw;
@@ -131,18 +130,30 @@ nav .logo {
   margin-bottom: 50px; }
 
 .carousel {
-  width: 90%;
-  display: block;
-  margin-top: auto;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 50px; }
+  width: 55%; }
 
-.indexGrid {
+.indexGrid2 {
   display: grid;
   grid-template-columns: 33% 33% 33%;
   justify-content: space-between;
   margin-bottom: 30px; }
+
+.indexGrid1 {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  justify-items: center;
+  align-items: center; }
+
+.indexGrid1Img {
+  justify-items: center;
+  align-items: center;
+  position: relative;
+  display: inline-block; }
+
+.indexGridImg_item {
+  position: absolute;
+  margin: auto;
+  color: white; }
 
 .footer-basic {
   padding: 20px 0;
