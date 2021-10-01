@@ -11,7 +11,7 @@ body {
   overflow-x: hidden; }
 
 nav {
-  background-color: #e7dada;
+  position: fixed;
   color: #b80062;
   display: flex;
   justify-content: space-between;

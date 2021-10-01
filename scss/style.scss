@@ -16,7 +16,7 @@ body {
     overflow-x: hidden;
   }
 nav {
-  background-color: $secondary-color;
+  position: fixed;
   color: $hover-color;
   display: flex;
   justify-content: space-between;
